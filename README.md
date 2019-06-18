@@ -19,7 +19,7 @@ Gather, analyze, and present monthly usage data from Reviewer Connect.
 
 ## PubMatch Validation
 
-Train logistic regression model to predict if matched publication is desired publication in metadata search.
+Train logistic regression model to predict if matched publication is desired publication in metadata search. Features are similarity scores of metadata fields (title, abstract, etc..)
 
 ## LDA Topic Modeling Proof-of-Concept
 
