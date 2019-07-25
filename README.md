@@ -3,6 +3,7 @@ A list and basic description of data science projects
 
 ## Predicting Journal Scope for Manuscript Submissions
 Given a new manuscript submission to an academic journal, what is the probability of it passing first-line review?
+Deep learning CNN with three channels short architecture.
 
 ## A/B Testing for Reviewer Connect Service
 Collect and analyze data from two versions of model to determine statistical differences in results
