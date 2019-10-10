@@ -1,12 +1,18 @@
 # ProjectList
 A list and basic description of data science projects
 
-## Predicting Journal Scope for Manuscript Submissions
+## Manuscript Prefill - Data Extraction
+Given a new manuscript submission, extract and prefill the fields author, title, abstract, institution, funder.
+
+## Add Conflict of Interest by Organization Data to Peer Review Recommendations
+Fuzzy comparison of author insstitutions with each potential reviewer institution to idenify potential conflict of interest in peer reviewer recommendation.
+
+## Predicting Peer Review Suitability for Manuscript Submissions
 Given a new manuscript submission to an academic journal, what is the probability of it passing first-line review?
-Deep learning CNN with three channels short architecture.
+Deep learning FFNN with seven fully connected layers.
 
 ## A/B Testing for Reviewer Connect Service
-Collect and analyze data from two versions of model to determine statistical differences in results
+Collect and analyze data from two versions of model to determine statistical differences in results using Bayesian inference.
 
 ## Java implementation of RAKE for keyword extraction and TextRank for key sentence extraction  
 
