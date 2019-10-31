@@ -1,11 +1,14 @@
 # ProjectList
 A list and basic description of data science projects
 
+## Retrain Manuscript Matcher
+Use updated last five years of published Title and Abstract from WoS to retrain and update a Fasttext-like FFNN in Tensorflow. Update Tensorflow code to enhance forward compatability. 
+
 ## Manuscript Prefill - Data Extraction
 Given a new manuscript submission, extract and prefill the fields author, title, abstract, institution, funder.
 
 ## Add Conflict of Interest by Organization Data to Peer Review Recommendations
-Fuzzy comparison of author insstitutions with each potential reviewer institution to idenify potential conflict of interest in peer reviewer recommendation.
+Fuzzy comparison of author insstitutions with each potential reviewer institution to idenify potential conflict of interest in peer reviewer recommendation. Comparison made with Jaro-Winkler similarity score. Threshold identified by training a Logistic Regression model with JW as the single feature.
 
 ## Predicting Peer Review Suitability for Manuscript Submissions
 Given a new manuscript submission to an academic journal, what is the probability of it passing first-line review?
