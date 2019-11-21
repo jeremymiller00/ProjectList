@@ -1,8 +1,13 @@
 # ProjectList
 A list and basic description of data science projects
 
-## Retrain Manuscript Matcher
-Use updated last five years of published Title and Abstract from WoS to retrain and update a Fasttext-like FFNN in Tensorflow. Update Tensorflow code to enhance forward compatability. 
+## Retrain and Update Manuscript Matcher
+Manuscript Matcher takes a manuscript title and abstract and return suggested journals for submission. 
+* Created dataset using the last five years of published Title and Abstract from WoS.
+* Filtered data down to ~8 million records by removing journals with low publishing frequency and known bad actors.
+* Retrained a Fasttext-like FFNN in Tensorflow. Also updated Tensorflow code to enhance forward compatibility.
+* Evaluated model using Recall at 1, 5, and 10.
+* Performed error analysis based on number of observations by journal.
 
 ## Manuscript Prefill - Data Extraction
 Given a new manuscript submission, extract and prefill the fields author, title, abstract, institution, funder.
