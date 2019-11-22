@@ -24,25 +24,24 @@ Gather, analyze, and present monthly usage data from Reviewer Connect.
 * Worked with developers to establish pipeline for data acquisition
 * Created and refined data reporting format focusing on visual representations (plots) and plain text descriptions.
 
-### Java implementation of RAKE for keyword extraction and TextRank for key sentence extraction  
-This project was about halfway completed when I took it over. I have completed the baseline implementations while ensembling a logistic regression model to classify a text token as part of the desired output or not. Since these unsupervised techniques are difficult to evaluate, the next step will be to ensemble a Java implementation of LexRank and use labeled user data to train a supervised ensemble whose features are the scores of the three individual models. 
-
-### Logistic Regression Body Text Classifier.
-Written in Scala and trained using Apache Spark. This classifier used part-of-speech tags to classify a given sentence of an academic manuscript as either a "body-text sentence" or not. Precision = 0.90; Recall = 0.90.
-
-### Java implementation of LexRank for extractive summarization
-The scores of these three algorithms together form the features of a logistic regression model to rank key sentences for rapid manuscript evaluation.
+### Ensemble Model for Keyword and Key Sentence Extraction
+Java implementation of RAKE for keyword extraction; Java implementations of LexRank and TextRank for key sentence extraction. This project was about halfway completed when I took it over.
+* Completed the baseline implementations
+* Trained Logistic Regression model in Scala using Apache Spark and Stanford Core NLP to classify a sentence as either "body sentence" or not based on part-of-speech tags.
+* Created ensemble linear model using unsupervised algorithm scores and classifier score as features
+* Incorporated user feedback data to train ensemble model to improve predictions over time
 
 ## Projects in Development
-### Add Conflict of Interest by Organization Data to Peer Review Recommendations
-Fuzzy comparison of author institutions with each potential reviewer institution to identify potential conflict of interest in peer reviewer recommendation. Comparison made with Jaro-Winkler similarity score. Threshold identified by training a Logistic Regression model with JW as the single feature.
-
 ### Predicting Peer Review Suitability for Manuscript Submissions
-Given a new manuscript submission to an academic journal, what is the probability of it passing first-line review?
-Deep learning FFNN with seven fully connected layers.
+Given a new manuscript submission to an academic journal, what is the probability of the manuscript proceeding to Peer Review?
+* Produced POC deep learning model based on output of a single, large publisher
+* Used Spark, Tensorflow, and Keras
 
 ### PubMatch Validation
 Trained logistic regression model to predict if matched publication is desired publication in metadata search. Features are similarity scores of metadata fields (title, abstract, etc..)
+
+### Add Conflict of Interest by Organization Data to Peer Review Recommendations
+Fuzzy comparison of author institutions with each potential reviewer institution to identify potential conflict of interest in peer reviewer recommendation. Comparison made with Jaro-Winkler similarity score. Threshold identified by training a Logistic Regression model with JW as the single feature.
 
 ### Manuscript Pre-fill - Data Extraction
 Given a new manuscript submission, extract and pre-fill the fields author, title, abstract, institution, funder.
