@@ -5,18 +5,20 @@ A list and basic description of data science projects
 ### Retrain and Update Manuscript Matcher
 Manuscript Matcher takes a manuscript title and abstract and return suggested journals for submission. 
 * Created dataset using the last five years of published Title and Abstract from WoS.
- * Enhanced dataset by oversampling journals with low numbers of publications
-* Filtered data down to ~8 million records by removing journals with low publishing frequency and known bad actors.
+ * Enhanced dataset by additionaly sampling journals with low numbers of publications
+* Filtered data down to ~13 million records by removing journals with low publishing frequency and known bad actors.
 * Retrained a Fasttext-like FFNN in Tensorflow. Also updated Tensorflow code to enhance forward compatibility.
 * Evaluated model using Recall at 1, 5, and 10.
 * Performed error analysis based on number of observations by journal.
+ * This analysis led to the decision to further sample journals with less publications in the dataset.
+* Implement workflow for quarterly model updating and retraining.
 
 ### A/B Testing for Reviewer Connect Service
-Collect and analyze data from two versions of Reviewer Connect peer reviewer recommender to determine which is more effective.
-* Used java data extraction tool on ec2 to acquire Reviewer Connect data.
-* Performed Bayesian A/B testing by modeling selection rate as a binomial distribution.
-* Confirmed results of Bayesian A/B testing with traditional Frequentist Hypothesis test.
-* Wrote and delivered report to stakeholders with test results and plain text description.
+Collect and analyze data from two versions of Reviewer Connect peer reviewer recommender to determine which is more effective and monitor continuuous performance.
+* Use java data extraction tool on ec2 to acquire Reviewer Connect data.
+* Performe Bayesian A/B testing by modeling selection rate as a binomial distribution.
+* Confirme results of Bayesian A/B testing with traditional Frequentist Hypothesis test.
+* Write and deliver reports to stakeholders with test results and plain text description.
 
 ### Data Reporting Pipeline for Peer Reviewer Recommendation System
 Gather, analyze, and present monthly usage data from Reviewer Connect.
@@ -42,6 +44,12 @@ Trained logistic regression model to predict if matched publication is desired p
 
 ### Add Conflict of Interest by Organization Data to Peer Review Recommendations
 Fuzzy comparison of author institutions with each potential reviewer institution to identify potential conflict of interest in peer reviewer recommendation. Comparison made with Jaro-Winkler similarity score. Threshold identified by training a Logistic Regression model with JW as the single feature.
+
+### Author Connect Researcher Search
+Given an article or set of articles, find a set of associated researchers.
+* A common use case is a journal or conferene that wants to solicit submissions
+* Currently this project is worth ~$6mil annually with 3-4k orders per year.
+* A human-completed order takes 1-3 hours to complete.
 
 ### Manuscript Pre-fill - Data Extraction
 Given a new manuscript submission, extract and pre-fill the fields author, title, abstract, institution, funder.
