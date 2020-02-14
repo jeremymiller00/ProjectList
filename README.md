@@ -1,8 +1,8 @@
 # ProjectList
-A list and basic description of data science projects
+An up-to-date list of data science projects with basic description.
 
 ## Project Currently in Production / Completed
-### Retrain and Update Manuscript Matcher
+### Retrain and Update Manuscript Matcher - In Production
 Manuscript Matcher takes a manuscript title and abstract and return suggested journals for submission. 
 * Created dataset using the last ten years of published Title and Abstract from WoS.
 * Filtered data down to ~13 million records by removing journals with low publishing frequency and known bad actors.
@@ -13,14 +13,14 @@ Manuscript Matcher takes a manuscript title and abstract and return suggested jo
 * Implemented workflow for quarterly model updating and retraining.
 * Added PCA 10 dimensional data extaction stage for export to Tableau. The facilitates scope analysis for Publisher Analytics team.
 
-### Ensemble Model for Keyword and Key Sentence Extraction
+### Ensemble Model for Keyword and Key Sentence Extraction - In Production
 Java implementation of RAKE for keyword extraction; Java implementations of LexRank and TextRank for key sentence extraction. This project was about halfway completed when I took it over.
 * Completed the baseline implementations
 * Trained Logistic Regression model in Scala using Apache Spark and Stanford Core NLP to classify a sentence as either "body sentence" or not based on part-of-speech tags.
 * Created ensemble linear model using unsupervised algorithm scores and classifier score as features
 * Incorporated user feedback data to train ensemble model to improve predictions over time
 
-### PubMatch Validation
+### PubMatch Validation - In Production
 Trained logistic regression model to predict if matched publication is in fact desired publication in metadata search. Features are similarity scores of metadata fields (title, abstract, etc..).
 * Used to create reports and analsis for Publisher Analytics.
 
