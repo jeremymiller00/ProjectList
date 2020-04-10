@@ -26,7 +26,7 @@ Trained logistic regression model to predict if matched publication is in fact d
 
 ### A/B Testing for Reviewer Connect Service
 Collect and analyze data from two versions of Reviewer Connect peer reviewer recommender to determine which is more effective and monitor continuuous performance.
-* Use java data extraction tool on ec2 to acquire Reviewer Connect data.
+* Write bash script and cron job to automatically extract relevant data from database.
 * Perform Bayesian A/B testing by modeling selection rate as a binomial distribution.
 * Confirm results of Bayesian A/B testing with traditional Frequentist Hypothesis test.
 * Write and deliver reports to stakeholders with test results and plain text description.
