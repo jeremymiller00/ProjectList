@@ -54,7 +54,7 @@ Given a new manuscript submission to an academic journal, what is the probabilit
 
 ### Author Connect Researcher Search
 Given an article or set of articles, find a set of associated researchers.
-* A common use case is a journal or conferene that wants to solicit submissions
+* A common use case is a journal or conference that wants to solicit submissions
 * Currently this project is worth ~$6mil annually with 3-4k orders per year.
 * A human-completed order takes 1-3 hours to complete.
 
