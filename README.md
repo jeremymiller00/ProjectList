@@ -3,7 +3,7 @@ An up-to-date list of data science projects with basic description.
 
 ## Project Currently in Production / Completed
 ### Manuscript Matcher - In Production
-Manuscript Matcher takes a manuscript title and abstract and return suggested journals for submission. 
+Helps researchers find the best journal for their work. Manuscript Matcher takes a manuscript title, abstract, and citations as input and returns suggested journals for submission. 
 * Created dataset using the last ten years of published Title and Abstract from WoS.
 * Filtered data down to ~13 million records by removing journals with low publishing frequency and known bad actors.
 * Retrained a Fasttext-like FFNN in Tensorflow. Also updated Tensorflow code to enhance forward compatibility.
@@ -31,15 +31,20 @@ Reviewer Connect is an editor-facing tool that finds peer reviewers for academic
 * Fuzzy comparison of author institutions with each potential reviewer institution to identify potential conflict of interest in peer reviewer recommendation.
 
 ### Ensemble Model for Keyword and Key Sentence Extraction - In Production
-Java implementation of RAKE for keyword extraction; Java implementations of LexRank and TextRank for key sentence extraction. This project was about halfway completed when I took it over.
+Auto keyword and keysentence extraction from manuscript submissions. In conjunction with other tools, allows editors to quickly assess fit between manuscript and publications. This project was about halfway completed when I took it over.
+* Java implementation of RAKE for keyword extraction
+* Java implementations of LexRank and TextRank for key sentence extraction. 
 * Completed the baseline implementations
 * Trained Logistic Regression model in Scala using Apache Spark and Stanford Core NLP to classify a sentence as either "body sentence" or not based on part-of-speech tags.
 * Created ensemble linear model using unsupervised algorithm scores and classifier score as features
 * Incorporated user feedback data to train ensemble model to improve predictions over time
 
 ### PubMatch Validation - In Production
-Trained logistic regression model to predict if matched publication is in fact desired publication in metadata search. Features are similarity scores of metadata fields (title, abstract, etc..).
-* Used to create reports and analsis for Publisher Analytics.
+Matching publisher data to records in Web of Science.
+* Trained logistic regression model to predict if matched publication is in fact desired publication in metadata search.
+* Features are similarity scores of metadata fields (title, abstract, etc..).
+* Used to create reports and analyses for Publisher Analytics.
+* Provides insight in rejected manuscripts and representations of published manuscripts.
 
 ## Projects in Development
 ### Predicting Peer Review Suitability for Manuscript Submissions
