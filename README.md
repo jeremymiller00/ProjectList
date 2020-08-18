@@ -53,6 +53,15 @@ Given a definition of a research scope, find a set of associated researchers.
 * Worked with subject matter expert to review and validate process and results.
 * Aim to be in full production by the end of August 2020.
 
+### Citation Count Prediction
+Predict citation count for scientific journal articles 3 years after publication.
+* Help journals and editors identify important research.
+* Help researchers project their future impact.
+* Extracted ~15 million scientific journal articles.
+* Extensive feature engineering to find predictors.
+* Modeling metadata features and content seprately to understand relative predictive power of each; can ensemble if appropriate.
+* POC to be delivered at the end of Q3 2020.
+
 ### Keyword Prediction
 Predict match between an academic text and a potential keyword.
 * Extracted data set from ~28mil published academic journal articles.
