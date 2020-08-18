@@ -44,8 +44,7 @@ Matching publisher data to records in Web of Science.
 
 ## Projects in Development
 ### Author Connect Researcher Search
-Given a definition of a research scope, find a set of associated researchers.
-* A common use case is a journal or conference that wants to solicit submissions.
+Given a definition of a research scope, find a set of associated researchers. Typical use case is a journal or conference that wants to solicit submissions.
 * Will augment the current human-researcher driven to reduce costs, fullfill more customer requests, and hopefully increase the click through rates.
 * Worked with product team to define metrics and goals.
 * Gathered and joined data from mutiple sources to construct training data set.
@@ -54,9 +53,7 @@ Given a definition of a research scope, find a set of associated researchers.
 * Aim to be in full production by the end of August 2020.
 
 ### Citation Count Prediction
-Predict citation count for scientific journal articles 3 years after publication.
-* Help journals and editors identify important research.
-* Help researchers project their future impact.
+Predict citation count for scientific journal articles 3 years after publication. Helps journals and editors identify important research. Helps researchers project their future impact.
 * Extracted ~15 million scientific journal articles.
 * Extensive feature engineering to find predictors.
 * Modeling metadata features and content seprately to understand relative predictive power of each; can ensemble if appropriate.
