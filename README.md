@@ -41,6 +41,11 @@ Matching publisher data to records in Web of Science.
 * Used to create reports and analyses for Publisher Analytics.
 * Provides insight in rejected manuscripts and representations of published manuscripts.
 
+### Supervised Word Mover'd Distance
+* Wrote Python code to implement Supervised Word Mover's Distance.
+* Useful for measuring document distance when a particular dimension is of interest.
+* Available for use throughout company.
+
 ## Projects in Development
 ### Author Connect Researcher Search
 Given a definition of a research scope, find a set of associated researchers. Typical use case is a journal or conference that wants to solicit submissions.
