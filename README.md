@@ -17,12 +17,11 @@ Helps researchers find the best journals for their work. Manuscript Matcher take
 ### Reviewer Connect - In Production
 Helps journal editors find peer reviewers for academic manuscript submissions.
 * Validated and updated prior model training process.
-* A/B testing for Reviewer Connect service: collect and analyze data from two versions of Reviewer Connect.
+* Delivered A/B testing for Reviewer Connect services: collected and analyzed data from two versions of Reviewer Connect.
 * Wrote bash script and cron job to automatically extract relevant data from database.
-* Perform Bayesian A/B testing by modeling selection rate as a binomial distribution.
-* Confirm results of Bayesian A/B testing with traditional Frequentist Hypothesis test.
-* Write and deliver reports to stakeholders with test results.
-* Work with product manager to perform ad-hoc data analysis to address product team and customer concerns.
+* Performed Bayesian A/B testing by modeling selection rate as a binomial distribution.
+* Confirmed results of Bayesian A/B testing with traditional Frequentist Hypothesis test.
+* Worked with product manager to perform ad-hoc data analysis to address product team and customer concerns.
 * Crafted data reporting pipeline to gather, analyze, and present monthly usage data.
 * Worked with Product Manager to define metrics.
 * Worked with developers to establish pipeline for data acquisition.
