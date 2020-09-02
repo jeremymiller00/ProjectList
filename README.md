@@ -49,13 +49,15 @@ Given a definition of a research scope, find a set of associated researchers. Ty
 * Gathered and joined data from mutiple sources to construct training data set.
 * Provided POC model with score 50% greater than POC target.
 * Worked with subject matter expert to review and validate process and results.
-* Aim to be in full production by the end of August 2020.
+* On schedule to be in full production by the end of August 2020.
 
 ### Citation Count Prediction
-Predict citation count for scientific journal articles 3 years after publication. Helps journals and editors identify important research. Helps researchers project their future impact.
+At the time of publication, predict citation count for scientific journal articles 3 years after publication. Helps journals and editors identify important research. Helps researchers project their future impact.
 * Extracted ~15 million scientific journal articles.
 * Extensive feature engineering to find predictors.
-* Modeling metadata features and content seprately to understand relative predictive power of each; can ensemble if appropriate.
+* Modeled metadata features using a Gradient Boosted Tree model and content using deep learning.
+* Modeling initially done seprately to understand relative predictive power of each.
+* Ensemble of two models provides best scores.
 * POC to be delivered at the end of Q3 2020.
 
 ### Keyword Prediction
