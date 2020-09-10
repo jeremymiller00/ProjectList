@@ -36,13 +36,23 @@ In conjunction with other tools, helps editors to quickly assess fit between man
 * Incorporated user feedback data to train ensemble model to improve predictions over time
 
 ### PubMatch Validation - In Production
-Matching publisher data to records in Web of Science.
-* Trained logistic regression model to predict if matched publication is in fact desired publication in metadata search.
-* Used to create reports and analyses for Publisher Analytics.
-* Provides insight in rejected manuscripts and representations of published manuscripts.
+Matching publisher data to records in Web of Science. Used to create reports and analyses for Publisher Analytics.
+* Worked with product manager to solicit efficient creation of labeled data set.
+* Trained logistic regression model in Python to predict if matched publication is in fact desired publication in metadata search.
+* Wrote and tested basic REST endpoint to provide on-demand predictions.
 
-### Supervised Word Mover'd Distance
-* Wrote Python code to implement Supervised Word Mover's Distance.
+### Citation Count Prediction - POC
+At the time of publication, predict citation count for scientific journal articles 3 years after publication. Helps journals and editors identify important research. Helps researchers project their future impact.
+* Extracted ~15 million scientific journal articles.
+* Extensive feature engineering to find predictors.
+* Modeled metadata features using a Gradient Boosted Tree model; modeled text content using deep learning.
+* Modeling initially done separately to understand relative predictive power of each.
+* Ensemble of two models provides best scores.
+* POC report delivered to product manager for assessment of further work.
+
+### Supervised Word Mover's Distance
+A technique for using document labels to transform word-vector space such that documents with matching labels are close togehter.
+* Wrote Python package to implement Supervised Word Mover's Distance.
 * Useful for measuring document distance when a particular dimension is of interest.
 * Available for use throughout company.
 
@@ -52,18 +62,10 @@ Given a definition of a research scope, find a set of associated researchers. Ty
 * Will augment the current human-researcher driven to reduce costs, fullfill more customer requests, and hopefully increase the click through rates.
 * Worked with product team to define metrics and goals.
 * Gathered and joined data from mutiple sources to construct training data set.
+* Trained Gradient Boosted Tree model with Spark ML.
 * Provided POC model with score 50% greater than POC target.
 * Worked with subject matter expert to review and validate process and results.
 * On schedule to be in full production by the end of August 2020.
-
-### Citation Count Prediction
-At the time of publication, predict citation count for scientific journal articles 3 years after publication. Helps journals and editors identify important research. Helps researchers project their future impact.
-* Extracted ~15 million scientific journal articles.
-* Extensive feature engineering to find predictors.
-* Modeled metadata features using a Gradient Boosted Tree model and content using deep learning.
-* Modeling initially done seprately to understand relative predictive power of each.
-* Ensemble of two models provides best scores.
-* POC to be delivered at the end of Q3 2020.
 
 ### Keyword Prediction
 Predict match between an academic text and a potential keyword.
