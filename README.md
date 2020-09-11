@@ -4,42 +4,33 @@ An up-to-date list of data science projects with basic description.
 ## Project Currently in Production / Completed
 ### Manuscript Matcher - In Production
 Helps researchers find the best journals for their work. Manuscript Matcher takes a manuscript title, abstract, and citations as input and returns suggested journals for submission. 
-* Created dataset using the last ten years of published Title and Abstract from WoS.
-* Filtered data down to ~14 million records by removing journals with low publishing frequency and known bad actors.
-* Retrained a Deep Learning in Tensorflow. Also updated Tensorflow code to enhance forward compatibility.
-* Evaluated model using Recall at 1, 5, and 10.
-* Performed error analysis based on number of observations by journal.
-* This analysis led to the decision to further sample journals with less publications in the dataset.
-* Implemented workflow for quarterly model updating and retraining.
-* Added PCA 10 dimensional data extaction stage for export to Tableau. This dataset facilitates scope analysis for Publisher Analytics team.
-* Modified model architecture to make better use of citation data for model inputs.
+* Used Spark to created dataset using rolling 10-year window of published articles from WoS.
+* Filtered data down to ~14 million records by removing journals based on criteria determined by consultation with product team.
+* Retrained and delivered a Deep Learning model with Tensorflow. Model metrics improved by 18%.
+* Updated Tensorflow code to enhance forward compatibility; implemented workflow for quarterly data updating and model retraining.
+* Improved model through error analysis to improve predictions from most error-prone inputs.
+* Enhanced Publisher Analytics toolkit by implementing PCA data extaction stage for export to Tableau. 
+* Aligned product with customer needs by modifying model architecture to account for new features.
 
 ### Reviewer Connect - In Production
-Helps journal editors find peer reviewers for academic manuscript submissions.
-* Validated and updated prior model training process.
-* Delivered A/B testing for Reviewer Connect services: collected and analyzed data from two versions of Reviewer Connect.
-* Wrote bash script and cron job to automatically extract relevant data from database.
-* Performed Bayesian A/B testing by modeling selection rate as a binomial distribution.
-* Confirmed results of Bayesian A/B testing with traditional Frequentist Hypothesis test.
-* Worked with product manager to perform ad-hoc data analysis to address product team and customer concerns.
-* Crafted data reporting pipeline to gather, analyze, and present monthly usage data.
-* Worked with Product Manager to define metrics.
-* Worked with developers to establish pipeline for data acquisition.
+Helps journal editors find peer reviewers for academic manuscript submissions. 
+* Validated and updated prior model training process; identified opportunity for model updating based on data source.
+* Delivered Bayesian A/B testing for old/new model versions. 100% of customers moved to new model, with metrics improved by 10% and lower technical debt.
+* Wrote bash script and cron job to automate extraction of relevant data from database, facilitating ongoing testing.
+* Crafted data reporting pipeline using Python and SQL to gather, analyze, and present monthly usage data.
 
 ### Ensemble Model for Keyword and Key Sentence Extraction - In Production
-In conjunction with other tools, helps editors to quickly assess fit between manuscript and publications. This project was about halfway completed when I took it over.
-* Java implementation of RAKE for keyword extraction
-* Java implementations of LexRank and TextRank for key sentence extraction. 
-* Completed the baseline implementations.
-* Trained Logistic Regression model in Scala using Apache Spark and Stanford Core NLP to classify a sentence as either "body sentence" or not based on part-of-speech tags.
-* Created ensemble linear model using unsupervised algorithm scores and classifier score as features
-* Incorporated user feedback data to train ensemble model to improve predictions over time
+In conjunction with other tools, helps editors to quickly assess fit between manuscript and publications.
+* Delivered Java implementations of LexRank and TextRank for key sentence extraction. 
+* Trained Logistic Regression model in Scala using Apache Spark and Stanford Core NLP to classify candidate sentences.
+* Created ensemble model and incorporated user feedback data to improve predictions over time.
 
 ### PubMatch Validation - In Production
 Matching publisher data to records in Web of Science. Used to create reports and analyses for Publisher Analytics.
 * Worked with product manager to solicit efficient creation of labeled data set.
 * Trained logistic regression model in Python to predict if matched publication is in fact desired publication in metadata search.
 * Wrote and tested basic REST endpoint to provide on-demand predictions.
+* Key algorithm in product with revenue ~100k per year.
 
 ### Citation Count Prediction - POC
 At the time of publication, predict citation count for scientific journal articles 3 years after publication. Helps journals and editors identify important research. Helps researchers project their future impact.
