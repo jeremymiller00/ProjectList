@@ -3,12 +3,12 @@ An up-to-date list of data science projects with basic description.
 
 ## Project Currently in Production / Completed
 ### Manuscript Matcher - In Production
-Helps researchers find the best journals for their work. Manuscript Matcher takes a manuscript title, abstract, and citations as input and returns suggested journals for submission. 
-* Used Spark to created dataset using rolling 10-year window of published articles from WoS.
-* Filtered data down to ~14 million records by removing journals based on criteria determined by consultation with product team.
-* Retrained and delivered a Deep Learning model with Tensorflow. Model metrics improved by 18%.
-* Updated Tensorflow code to enhance forward compatibility; implemented workflow for quarterly data updating and model retraining.
-* Improved model through error analysis to improve predictions from most error-prone inputs.
+Helps researchers find appropriate journals for their work. Deep learning model for ~15,000 class Natural Language classfication problem.
+* Updated, retrained, and delivered a Deep Learning model with Tensorflow, improving recall@10 by 15%.
+* Refactored Tensorflow code to enhance forward compatibility; implemented automated workflow in Databricks for quarterly data updates and model retraining.
+* Used Spark SQL to created dataset from rolling 10-year window of published articles.
+* Filtered data down to ~14 million records based on criteria determined by consultation with product team.
+* Improved model through error analysis to improve predictions from most error-prone inputs; increased recall@10 by 5%.
 * Enhanced Publisher Analytics toolkit by implementing PCA data extaction stage for export to Tableau. 
 * Aligned product with customer needs by modifying model architecture to account for new features.
 
