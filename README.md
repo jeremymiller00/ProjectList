@@ -12,34 +12,31 @@ Helps researchers find appropriate journals for their work. Deep learning model 
 * Enhanced Publisher Analytics toolkit by implementing PCA data extaction stage for export to Tableau. 
 * Aligned product with customer needs by modifying model architecture to account for new features.
 
+### PubMatch Validation - In Production
+Matching publisher data to records in Web of Science for Publisher Analytics reporting. Linear classifer for Natual Language document classification.
+* Key algorithm in product with revenue ~100k per year.
+* Worked with product manager to solicit efficient creation of labeled data set.
+* Trained logistic regression model in Python to predict match between publisher and company records; accuracy 96%.
+* Wrote and tested basic REST endpoint to provide on-demand predictions.
+
 ### Reviewer Connect - In Production
-Helps journal editors find peer reviewers for academic manuscript submissions. 
-* Validated and updated prior model training process; identified opportunity for model updating based on data source.
-* Delivered Bayesian A/B testing for old/new model versions. 100% of customers moved to new model, with metrics improved by 10% and lower technical debt.
-* Wrote bash script and cron job to automate extraction of relevant data from database, facilitating ongoing testing.
-* Crafted data reporting pipeline using Python and SQL to gather, analyze, and present monthly usage data.
+Assist journal editors in finding peer reviewers for academic manuscript submissions. Linear classifier for ranking Elastic Search results.
+* Delivered weekly Bayesian A/B testing for old/new model versions over 3 months. 100% of customers moved to new model, with metrics improved by 10% and lower technical debt.
+* Wrote bash script and cron job to automate extraction every 2 weeks.
+* Delivered monthly data reporting pipeline using Python and SQL to gather, analyze, and present monthly usage data.
+* Validated and updated prior model training process.
 
 ### Ensemble Model for Keyword and Key Sentence Extraction - In Production
-In conjunction with other tools, helps editors to quickly assess fit between manuscript and publications.
+Helps journal editors manage workflow by quickly assessing fit between manuscript and publications. Linear ensemble of unsupervised models, with supporting liner classifier.
 * Delivered Java implementations of LexRank and TextRank for key sentence extraction. 
 * Trained Logistic Regression model in Scala using Apache Spark and Stanford Core NLP to classify candidate sentences.
 * Created ensemble model and incorporated user feedback data to improve predictions over time.
 
-### PubMatch Validation - In Production
-Matching publisher data to records in Web of Science. Used to create reports and analyses for Publisher Analytics.
-* Worked with product manager to solicit efficient creation of labeled data set.
-* Trained logistic regression model in Python to predict if matched publication is in fact desired publication in metadata search.
-* Wrote and tested basic REST endpoint to provide on-demand predictions.
-* Key algorithm in product with revenue ~100k per year.
-
 ### Citation Count Prediction - POC
-At the time of publication, predict citation count for scientific journal articles 3 years after publication. Helps journals and editors identify important research. Helps researchers project their future impact.
-* Extracted ~15 million scientific journal articles.
-* Extensive feature engineering to find predictors.
-* Modeled metadata features using a Gradient Boosted Tree model; modeled text content using deep learning.
-* Modeling initially done separately to understand relative predictive power of each.
-* Ensemble of two models provides best scores.
-* POC report delivered to product manager for assessment of further work.
+A tool to help journals identify important research, and researchers project their future impact.
+* Delivered POC report showing 15% improvement in MAE over baseline.
+* Extracted ~15 million scientific journal articles; performed extensive feature engineering to find predictors.
+* Modeled metadata features using a Gradient Boosted Tree model; modeled text content using deep learning; ensembled for best prediction.
 
 ### Supervised Word Mover's Distance
 A technique for using document labels to transform word-vector space such that documents with matching labels are close togehter.
