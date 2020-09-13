@@ -59,9 +59,6 @@ Given a new manuscript submission to an academic journal, what is the probabilit
 * Used Spark, Tensorflow, and Keras.
 * On hold due to product team priorities.
 
-### Manuscript Pre-fill - Data Extraction
-Given a new manuscript submission, extract and pre-fill the fields author, title, abstract, institution, funder.
-
 ### LDA Topic Modeling Proof-of-Concept
 Train and visualize Latent Dirichlet Allocation model to identify subtopics in scientific academic publishing.
 
