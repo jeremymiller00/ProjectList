@@ -40,18 +40,15 @@ A technique for using document labels to transform word-vector space such that d
 * Available for use throughout company.
 
 ## Projects in Development
-### Author Connect Researcher Search
-Given a definition of a research scope, find a set of associated researchers. Typical use case is a journal or conference that wants to solicit submissions.
-* Will augment the current human-researcher driven to reduce costs, fullfill more customer requests, and hopefully increase the click through rates.
+### Gradient Boosted Tree model for metadata classification. Finds relevant researchers for email marketing product.
+* Projected to decrease product delivery time by at least 50%.
+* Delivered Gradient Boosted Tree model with Spark ML with score 50% greater than POC target.
 * Worked with product team to define metrics and goals.
 * Gathered and joined data from mutiple sources to construct training data set.
-* Trained Gradient Boosted Tree model with Spark ML.
-* Provided POC model with score 50% greater than POC target.
 * Worked with subject matter expert to review and validate process and results.
-* On schedule to be in full production by the end of August 2020.
 
 ### Keyword Prediction
-Predict match between an academic text and a potential keyword.
+Deep Learning Natural Language token classification. Predict match between an academic text and a potential keyword.
 * Extracted data set from ~28mil published academic journal articles.
 * Trained deep learning model to predict match between text and potential keyword.
 * To be used as part of an ensemble for subtopic discovery.
