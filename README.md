@@ -2,8 +2,7 @@
 An up-to-date list of data science projects with basic description.
 
 ## Project Currently in Production / Completed
-### Manuscript Matcher - In Production
-Helps researchers find appropriate journals for their work. Deep learning model for ~15,000 class Natural Language classfication problem.
+### Deep learning model for ~15,000 class Natural Language classfication problem. Helps researchers find appropriate journals for their work.
 * Updated, retrained, and delivered a Deep Learning model with Tensorflow, improving recall@10 by 15%.
 * Refactored Tensorflow code to enhance forward compatibility; implemented automated workflow in Databricks for quarterly data updates and model retraining.
 * Used Spark SQL to created dataset from rolling 10-year window of published articles.
@@ -12,33 +11,29 @@ Helps researchers find appropriate journals for their work. Deep learning model 
 * Enhanced Publisher Analytics toolkit by implementing PCA data extaction stage for export to Tableau. 
 * Aligned product with customer needs by modifying model architecture to account for new features.
 
-### PubMatch Validation - In Production
-Matching publisher data to records in Web of Science for Publisher Analytics reporting. Linear classifer for Natual Language document classification.
-* Key algorithm in product with revenue ~100k per year.
-* Worked with product manager to solicit efficient creation of labeled data set.
-* Trained logistic regression model in Python to predict match between publisher and company records; accuracy 96%.
-* Wrote and tested basic REST endpoint to provide on-demand predictions.
-
-### Reviewer Connect - In Production
-Assist journal editors in finding peer reviewers for academic manuscript submissions. Linear classifier for ranking Elastic Search results.
+### Linear classifier for ranking researcher records. Assists journal editors in finding peer reviewers for academic manuscript submissions.
 * Delivered weekly Bayesian A/B testing for old/new model versions over 3 months. 100% of customers moved to new model, with metrics improved by 10% and lower technical debt.
 * Wrote bash script and cron job to automate extraction every 2 weeks.
 * Delivered monthly data reporting pipeline using Python and SQL to gather, analyze, and present monthly usage data.
 * Validated and updated prior model training process.
 
-### Ensemble Model for Keyword and Key Sentence Extraction - In Production
-Helps journal editors manage workflow by quickly assessing fit between manuscript and publications. Linear ensemble of unsupervised models, with supporting liner classifier.
+### Linear classifer for Natual Language document classification. Matches publisher data to company database records for Publisher Analytics reporting.
+* Key algorithm in product with revenue ~100k per year.
+* Worked with product manager to solicit efficient creation of labeled data set.
+* Trained logistic regression model in Python to predict match between publisher and company records; accuracy 96%.
+* Wrote and tested basic REST endpoint to provide on-demand predictions.
+
+### Linear ensemble of unsupervised natural language extraction models. Helps journal editors manage workflow by quickly assessing fit between manuscript and publications. 
 * Delivered Java implementations of LexRank and TextRank for key sentence extraction. 
 * Trained Logistic Regression model in Scala using Apache Spark and Stanford Core NLP to classify candidate sentences.
 * Created ensemble model and incorporated user feedback data to improve predictions over time.
 
-### Citation Count Prediction - POC
-A tool to help journals identify important research, and researchers project their future impact.
+### Gradient Boosted Tree / Deep Learning ensemble for combined metadata / NLP regression. Helps journals identify important research, and researchers project their future impact. 
 * Delivered POC report showing 15% improvement in MAE over baseline.
 * Extracted ~15 million scientific journal articles; performed extensive feature engineering to find predictors.
 * Modeled metadata features using a Gradient Boosted Tree model; modeled text content using deep learning; ensembled for best prediction.
 
-### Supervised Word Mover's Distance
+### Supervised Word Mover's Distance Python Package
 A technique for using document labels to transform word-vector space such that documents with matching labels are close togehter.
 * Wrote Python package to implement Supervised Word Mover's Distance.
 * Useful for measuring document distance when a particular dimension is of interest.
