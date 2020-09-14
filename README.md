@@ -20,7 +20,7 @@ An up-to-date list of data science projects with basic description.
 ### Linear classifer for Natual Language document classification. Matches publisher data to company database records for Publisher Analytics reporting.
 * Key algorithm in product with revenue ~100k per year.
 * Worked with product manager to solicit efficient creation of labeled data set.
-* Trained logistic regression model in Python to predict match between publisher and company records; accuracy 96%.
+* Trained logistic regression model in Python to predict match between publisher and company records; accuracy 99%.
 * Wrote and tested basic REST endpoint to provide on-demand predictions.
 
 ### Linear ensemble of unsupervised natural language extraction models. Helps journal editors manage workflow by quickly assessing fit between manuscript and publications. 
@@ -41,7 +41,7 @@ A technique for using document labels to transform word-vector space such that d
 
 ## Projects in Development
 ### Gradient Boosted Tree model for metadata classification. Finds relevant researchers for email marketing product.
-* Projected to decrease product delivery time by at least 50%.
+* Projected to decrease product delivery time by at least 50% for product with ~3mil annual revenue.
 * Delivered Gradient Boosted Tree model with Spark ML with score 50% greater than POC target.
 * Worked with product team to define metrics and goals.
 * Gathered and joined data from mutiple sources to construct training data set.
@@ -50,12 +50,12 @@ A technique for using document labels to transform word-vector space such that d
 ### Keyword Prediction
 Deep Learning Natural Language token classification. Predict match between an academic text and a potential keyword.
 * Extracted data set from ~28mil published academic journal articles.
-* Trained deep learning model to predict match between text and potential keyword.
+* Trained deep learning model to predict match between text and potential keyword with AUC 0.96.
 * To be used as part of an ensemble for subtopic discovery.
 
 ### Predicting Peer Review Suitability for Manuscript Submissions
 Given a new manuscript submission to an academic journal, what is the probability of the manuscript proceeding to Peer Review?
-* Produced POC deep learning model based on output of a single, large publisher.
+* Produced POC deep learning model based on output of a single, large publisher with AUC 0.82 and Area Under P/R Curve 0.87.
 * Used Spark, Tensorflow, and Keras.
 * On hold due to product team priorities.
 
