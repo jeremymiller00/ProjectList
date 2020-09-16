@@ -41,7 +41,7 @@ A technique for using document labels to transform word-vector space such that d
 
 ## Projects in Development
 ### Gradient Boosted Tree model for metadata classification. Finds relevant researchers for email marketing product.
-* Projected to decrease product delivery time by at least 50% for product with ~3mil annual revenue.
+* Projected to decrease product delivery time by at least 50% for product with ~6mil annual revenue.
 * Delivered Gradient Boosted Tree model with Spark ML with score 50% greater than POC target.
 * Worked with product team to define metrics and goals.
 * Gathered and joined data from mutiple sources to construct training data set.
