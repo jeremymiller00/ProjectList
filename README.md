@@ -7,7 +7,7 @@ An up-to-date list of data science projects with basic description.
 * Refactored Tensorflow code to enhance forward compatibility; implemented automated workflow in Databricks for quarterly data updates and model retraining.
 * Used Spark SQL to created dataset from rolling 10-year window of published articles.
 * Filtered data down to ~14 million records based on criteria determined by consultation with product team.
-* Improved model through error analysis to improve predictions from most error-prone inputs; increased recall@10 by 5%.
+* Improved model through error analysis to improve predictions from most error-prone inputs.
 * Enhanced Publisher Analytics toolkit by implementing PCA data extaction stage for export to Tableau. 
 * Aligned product with customer needs by modifying model architecture to account for new features.
 
@@ -22,6 +22,13 @@ An up-to-date list of data science projects with basic description.
 * Worked with product manager to solicit efficient creation of labeled data set.
 * Trained logistic regression model in Python to predict match between publisher and company records; accuracy 99%.
 * Wrote and tested basic REST endpoint to provide on-demand predictions.
+
+### Gradient Boosted Tree model for metadata classification. Finds relevant researchers for email marketing product.
+* Projected to decrease product delivery time by at least 50% for product with ~6mil annual revenue.
+* Delivered Gradient Boosted Tree model with Spark ML with score 50% greater than POC target.
+* Worked with product team to define metrics and goals.
+* Gathered and joined data from mutiple sources to construct training data set.
+* Worked with subject matter expert to review and validate process and results.
 
 ### Linear ensemble of unsupervised natural language extraction models. Helps journal editors manage workflow by quickly assessing fit between manuscript and publications. 
 * Delivered Java implementations of LexRank and TextRank for key sentence extraction. 
@@ -40,13 +47,6 @@ A technique for using document labels to transform word-vector space such that d
 * Available for use throughout company.
 
 ## Projects in Development
-### Gradient Boosted Tree model for metadata classification. Finds relevant researchers for email marketing product.
-* Projected to decrease product delivery time by at least 50% for product with ~6mil annual revenue.
-* Delivered Gradient Boosted Tree model with Spark ML with score 50% greater than POC target.
-* Worked with product team to define metrics and goals.
-* Gathered and joined data from mutiple sources to construct training data set.
-* Worked with subject matter expert to review and validate process and results.
-
 ### Keyword Prediction
 Deep Learning Natural Language token classification. Predict match between an academic text and a potential keyword.
 * Extracted data set from ~28mil published academic journal articles.
