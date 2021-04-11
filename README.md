@@ -52,6 +52,9 @@ A technique for using document labels to transform word-vector space such that d
 * Available for use throughout company.
 
 ## Projects in Development
+### Document Cluster Label Extraction / Creation
+* Given a cluster of related documents ranging in size from approximately 10 to 10,000, extract / create a meaningful, "readable" label for users.
+
 ### Keyword Prediction
 Deep Learning Natural Language token classification. Predict match between an academic text and a potential keyword.
 * Extracted data set from ~28mil published academic journal articles.
