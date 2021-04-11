@@ -2,6 +2,11 @@
 An up-to-date list of data science projects with basic description.
 
 ## Project Currently in Production / Completed
+### Custom Java Library for Bespoke Term Extraction Use Case from Patent Document Database.
+* Worked with team members to define requirements and test cases.
+* Designed and executed expert review process to ensure quality output.
+* Delivered production Java 8 library with full test coverage.
+
 ### Deep learning model for ~15,000 class Natural Language classfication problem. Helps researchers find appropriate journals for their work.
 * Updated, retrained, and delivered a Deep Learning model with Tensorflow, improving recall@10 by 15%.
 * Refactored Tensorflow code to enhance forward compatibility; implemented automated workflow in Databricks for quarterly data updates and model retraining.
