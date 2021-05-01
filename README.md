@@ -51,7 +51,7 @@ A technique for using document labels to transform word-vector space such that d
 * Useful for measuring document distance when a particular dimension is of interest.
 * Available for use throughout company.
 
-## Projects in Development
+## Projects in Development / Prototypes
 ### Document Cluster Label Extraction / Creation
 * Given a cluster of related documents ranging in size from approximately 10 to 10,000, extract / create a meaningful, "readable" label for users.
 
