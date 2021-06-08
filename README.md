@@ -6,6 +6,8 @@ An up-to-date list of data science projects with basic description.
 * Worked with team members to define requirements and test cases.
 * Designed and executed expert review process to ensure quality output.
 * Delivered production Java 8 library with full test coverage.
+* Modified a common unsupervised keyword extraction algorithm to meet specific requirements.
+* Leveraged part-of-speech tagging and sentence structure.
 
 ### Deep learning model for ~15,000 class Natural Language classfication problem. Helps researchers find appropriate journals for their work.
 * Updated, retrained, and delivered a Deep Learning model with Tensorflow, improving recall@10 by 15%.
