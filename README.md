@@ -2,6 +2,13 @@
 An up-to-date list of data science projects with basic description.
 
 ## Project Currently in Production / Completed
+### Document Cluster Label Extraction / Creation
+* Given a cluster of related documents ranging in size from approximately 10 to 10,000, extract / create a meaningful, "readable" label for users.
+* Created custom Spark application to ingest document clusters, identify relevant candidate labels, and rank candidates.
+* Precision = 0.92 on test dataset.
+* Worked with engineering and product teams to ensure technical and customer requirements were met.
+* Collaborated with product team to implement plan for ongoing data collection and model enhancement. 
+
 ### Custom Java Library for Bespoke Term Extraction Use Case from Patent Document Database.
 * Worked with team members to define requirements and test cases.
 * Designed and executed expert review process to ensure quality output.
